@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Spotify API",
+        "img": "spotify.png",
+        "description": "Project for Programming 3",
+        "link": "https://github.com/pgm-jandeschacht/todo-api-flow-exercise"
+    },
+    {
+        "title": "No Planet B",
+        "img": "planet_b.svg",
+        "description": "Project for Web Design",
+        "link": "https://github.com/pgm-jandeschacht/No_Planet_B"
+    }
+]

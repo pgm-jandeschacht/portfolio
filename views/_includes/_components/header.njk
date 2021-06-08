@@ -1,0 +1,28 @@
+<section class="nav">
+    <nav class="nav__container max-width">
+        <div class="nav__container__logo">
+            <img src="{{ '/assets/images/logo.png' | url }}" alt="Logo of Jan Deschacht">
+        </div>
+
+        <ul class="nav__container__list">
+            {# {% for navPage in collections.all | eleventyNavigation %}
+                <li class="nav__container__list__item">
+                    <a href="{{ navPage.url | url }}" class="{% if navPage.url == page.url %}{{ class }} active{% endif %}">{{ navPage.key }}</a>
+                </li>
+            {% endfor %} #}
+
+            <li class="nav__container__list__item">
+                <a class="nav__container__list__item__link ab" href="#about">About</a>
+            </li>
+            <li class="nav__container__list__item">
+                <a class="nav__container__list__item__link sk" href="#skills">Skills</a>
+            </li>
+            <li class="nav__container__list__item">
+                <a class="nav__container__list__item__link pr" href="#projects">Projects</a>
+            </li>
+            <li class="nav__container__list__item">
+                <a class="nav__container__list__item__link co" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</section>

@@ -1,0 +1,35 @@
+.max-width {
+    max-width: 80rem;
+    margin: auto;
+}
+
+.invisible {
+    display: none;
+}
+
+// .vh {
+//     height: 100%;
+// }
+
+.h2-title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+
+    &::before {
+        display: block; 
+        content: " "; 
+        margin-top: -4.68rem; 
+        height: calc(4.68rem + 4rem); 
+        visibility: hidden; 
+        pointer-events: none;
+    }
+}
+
+.padding {
+    padding: 2rem 4rem;
+}
+
+.linking {
+    background-color: $black-color;
+}

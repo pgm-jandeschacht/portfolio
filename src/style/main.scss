@@ -14,15 +14,21 @@
 
 // 3. Vendors
 @import
-    'vendors/normalize';
-
+  'vendors/normalize';
+    
     
 // 4. Components
-// @import
-
+@import
+  'components/header';
+    
     
 // 5. Layout-related sections
-// @import
+@import
+  'layout/hero',
+  'layout/projects',
+  'layout/about',
+  'layout/contact',
+  'layout/skills';
 
 
 // 6. Page-specific styles
