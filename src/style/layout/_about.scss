@@ -13,22 +13,31 @@
             @include media-min(md) {
                 width: 50%;
             }
-
+            
             .salutation {
-                font-size: 3rem;
+                font-size: 2.5rem;
                 font-weight: 500;
+                @include media-min(xxs) {
+                    font-size: 3rem;
+                }
             }
             
             .name {
                 margin-top: 1rem;
                 font-weight: 600;
-                font-size: 3.5rem;
+                font-size: 3rem;
                 margin-bottom: 2rem;
+                @include media-min(xxs) {
+                    font-size: 3.5rem;
+                }
             }
-
+            
             .synopsis {
-                font-size: 1.4rem;
+                font-size: 1.2rem;
                 line-height: 1.5;
+                @include media-min(xxs) {
+                    font-size: 1.4rem;
+                }
             }
             & .ab {
                 color: #ce643a;

@@ -1,7 +1,7 @@
 .hero {
     background-color: $black-color;
     padding: 2rem 2rem 0 2rem;
-    @include media-min(xxs) {
+    @include media-min(xs) {
         padding: 2rem 4rem 0 4rem;
     }
     
@@ -20,6 +20,9 @@
             display: flex;
             justify-content: center;
 
+            img {
+                object-fit: contain;
+            }
         }
 
         &__scroll {
