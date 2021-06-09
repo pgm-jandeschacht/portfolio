@@ -1,28 +1,51 @@
 <section class="nav">
     <nav class="nav__container max-width">
-        <a href="{{ '/' | url }}" class="nav__container__logo">
+        <button class="hamburger hamburger--elastic burger" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <a href="#top" class="nav__container__logo">
             <img src="{{ '/assets/images/logo.png' | url }}" alt="Logo of Jan Deschacht">
         </a>
 
         <ul class="nav__container__list">
-            {# {% for navPage in collections.all | eleventyNavigation %}
-                <li class="nav__container__list__item">
-                    <a href="{{ navPage.url | url }}" class="{% if navPage.url == page.url %}{{ class }} active{% endif %}">{{ navPage.key }}</a>
-                </li>
-            {% endfor %} #}
-
-            <li class="nav__container__list__item">
+            <li class="nav__container__list__item nav-link">
                 <a class="nav__container__list__item__link ab" href="#about">About</a>
             </li>
-            <li class="nav__container__list__item">
+            <li class="nav__container__list__item nav-link">
                 <a class="nav__container__list__item__link sk" href="#skills">Skills</a>
             </li>
-            <li class="nav__container__list__item">
+            <li class="nav__container__list__item nav-link">
                 <a class="nav__container__list__item__link pr" href="#projects">Projects</a>
             </li>
-            <li class="nav__container__list__item">
+            <li class="nav__container__list__item nav-link">
                 <a class="nav__container__list__item__link co" href="#contact">Contact</a>
             </li>
         </ul>
     </nav>
+
+    <ul class="nav__mobile__list">
+        <li class="nav__mobile__list__item nav-link-mobile">
+            <a class="nav__mobile__list__item__link ab" href="#about">
+                <p>About</p>
+            </a>
+        </li>
+        <li class="nav__mobile__list__item nav-link-mobile">
+            <a class="nav__mobile__list__item__link sk" href="#skills">
+                <p>Skills</p>
+            </a>
+        </li>
+        <li class="nav__mobile__list__item nav-link-mobile">
+            <a class="nav__mobile__list__item__link pr" href="#projects">
+                <p>Projects</p>
+            </a>
+        </li>
+        <li class="nav__mobile__list__item nav-link-mobile">
+            <a class="nav__mobile__list__item__link co" href="#contact">
+                <p>Contact</p>
+            </a>
+        </li>
+    </ul>
 </section>

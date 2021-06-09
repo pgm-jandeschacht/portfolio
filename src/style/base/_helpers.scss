@@ -7,14 +7,13 @@
     display: none;
 }
 
-// .vh {
-//     height: 100%;
-// }
-
 .h2-title {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
     font-weight: 700;
+    @include media-min(sm) {
+        font-size: 3.5rem;
+    }
 
     &::before {
         display: block; 
@@ -27,5 +26,28 @@
 }
 
 .padding {
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
+    
+    @include media-min(sm) {
+        padding: 2rem 4rem;
+    }
+}
+
+.nav-link,
+.nav-link-mobile {
+    & .active.pr {
+        border-color: #d34e7f;
+    }
+
+    & .active.co {
+        border-color: #8369c4;
+    }
+
+    & .active.ab {
+        border-color: #ce643a;
+    }
+
+    & .active.sk {
+        border-color: #1125bc;
+    }
 }

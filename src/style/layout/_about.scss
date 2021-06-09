@@ -3,9 +3,16 @@
     &__container {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
+        @include media-min(md) {
+            flex-wrap: nowrap;
+        }
 
         &__text {
-            width: 50%;
+            width: 100%;
+            @include media-min(md) {
+                width: 50%;
+            }
 
             .salutation {
                 font-size: 3rem;
@@ -21,21 +28,26 @@
 
             .synopsis {
                 font-size: 1.4rem;
+                line-height: 1.5;
             }
             & .ab {
                 color: #ce643a;
             }
-
         }
 
         &__img {
-            margin-top: -2rem;
-            margin-left: 4rem;
-            width: 50%;
+            margin-top: 2rem;
+            margin-left: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: hidden;
+            width: 100%;
+            @include media-min(md) {
+                margin-top: -2rem;
+                margin-left: 4rem;
+                width: 50%;
+            }
             
             img {
                 object-fit: contain;

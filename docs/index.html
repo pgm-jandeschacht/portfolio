@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <section class="hero">
+    <section class="hero" id="top">
     <div class="hero__wrapper max-width">
         <div class="hero__wrapper__logo">
             <img src="/portfolio/assets/images/hero.png " alt="Logo Jan Deschacht and hero">
@@ -29,27 +29,54 @@
 
     <section class="nav">
     <nav class="nav__container max-width">
-        <a href="/portfolio/" class="nav__container__logo">
+        <button class="hamburger hamburger--elastic burger" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <a href="#top" class="nav__container__logo">
             <img src="/portfolio/assets/images/logo.png" alt="Logo of Jan Deschacht">
         </a>
 
         <ul class="nav__container__list">
-            
-
-            <li class="nav__container__list__item">
+            <li class="nav__container__list__item nav-link">
                 <a class="nav__container__list__item__link ab" href="#about">About</a>
             </li>
-            <li class="nav__container__list__item">
+            <li class="nav__container__list__item nav-link">
                 <a class="nav__container__list__item__link sk" href="#skills">Skills</a>
             </li>
-            <li class="nav__container__list__item">
+            <li class="nav__container__list__item nav-link">
                 <a class="nav__container__list__item__link pr" href="#projects">Projects</a>
             </li>
-            <li class="nav__container__list__item">
+            <li class="nav__container__list__item nav-link">
                 <a class="nav__container__list__item__link co" href="#contact">Contact</a>
             </li>
         </ul>
     </nav>
+
+    <ul class="nav__mobile__list">
+        <li class="nav__mobile__list__item nav-link-mobile">
+            <a class="nav__mobile__list__item__link ab" href="#about">
+                <p>About</p>
+            </a>
+        </li>
+        <li class="nav__mobile__list__item nav-link-mobile">
+            <a class="nav__mobile__list__item__link sk" href="#skills">
+                <p>Skills</p>
+            </a>
+        </li>
+        <li class="nav__mobile__list__item nav-link-mobile">
+            <a class="nav__mobile__list__item__link pr" href="#projects">
+                <p>Projects</p>
+            </a>
+        </li>
+        <li class="nav__mobile__list__item nav-link-mobile">
+            <a class="nav__mobile__list__item__link co" href="#contact">
+                <p>Contact</p>
+            </a>
+        </li>
+    </ul>
 </section>
     
     <main>
@@ -63,9 +90,9 @@
         <div class="about__container__text">
             <p class="salutation"><span class="ab">Hi</span> there,</p>
             
-            <p class="name">I'm <span class="ab">jan Deschacht!</span></p>
+            <p class="name">I'm <span class="ab">Jan Deschacht!</span></p>
             
-            <p class="synopsis">A <span class="ab">front end developer</span> with a sense of design and responsiveness. For the moment I'm studying programming at Arteveldehogeschool.</p>
+            <p class="synopsis">A <span class="ab">front end developer</span> from Ostend with a sense of design and responsiveness. For the moment I'm studying programming at Arteveldehogeschool.</p>
         </div>
 
         <div class="about__container__img">

@@ -3,11 +3,18 @@
     &__wrapper {
         display: flex;
         align-items: flex-start;
+        flex-wrap: wrap;
+        @include media-min(md) {
+            flex-wrap: nowrap;
+        }
 
         &__list {
-            width: 50%;
             display: flex;
             flex-wrap: wrap;
+            width: 100%;
+            @include media-min(md) {
+                width: 50%;
+            }
 
             &__item {
                 width: 100%;
@@ -23,14 +30,18 @@
                     align-items: center;
                     transition: all 0.3s ease-in-out;
                     border-radius: 8px;
+                    padding: 1rem;
 
                     &__item {
                         width: 100%;
                     }
 
                     &__img {
-                        padding: 2rem;
+                        margin-right: 1rem;
                         width: 10rem;
+                        @include media-min(md) {
+                            padding: 2rem;
+                        }
 
                         img {
                             width: 100%;
@@ -41,13 +52,19 @@
                     &__text {
                         
                         .title {
-                            font-size: 2rem;
                             font-weight: 500;
                             margin-bottom: 0.5rem;
+                            font-size: 1.5rem;
+                            @include media-min(md) {
+                                font-size: 2rem;
+                            }
                         }
-
+                        
                         .description {
-                            font-size: 1.2rem;
+                            font-size: 1rem;
+                            @include media-min(sm) {
+                                font-size: 1.2rem;
+                            }
                         }
                     }
 
@@ -60,16 +77,19 @@
         }
         
         &__img {
-            margin-top: -2rem;
-            margin-left: 4rem;
-            width: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: hidden;
-            height: 23rem;
             background: linear-gradient(0deg, rgba(17,17,17,1) 0%, rgba(17,17,17,0) 33%, rgba(17,17,17,0) 100%);
             background-size: cover;
+            width: 100%;
+            margin-top: 2rem;
+            @include media-min(md) {
+                height: 23rem;
+                margin-left: 4rem;
+                width: 50%;
+            }
             
             img {
                 object-fit: cover;

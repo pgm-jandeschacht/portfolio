@@ -1,12 +1,17 @@
 .hero {
     background-color: $black-color;
-    padding: 2rem 4rem 0 4rem;
-    padding-left: 4rem;
+    padding: 2rem 2rem 0 2rem;
+    @include media-min(xxs) {
+        padding: 2rem 4rem 0 4rem;
+    }
     
     &__wrapper {
         height: calc(100vh - 2rem);
         display: flex;
         flex-direction: column;
+        @include media-min(fullPlusPlus) {
+            height: 60rem;
+        }
 
 
         &__logo {
@@ -14,16 +19,11 @@
             height: calc(80% - 1rem);
             display: flex;
             justify-content: center;
-            @include media-min(fullPlus) {
-                height: calc(85% - 1rem);
-            }
+
         }
 
         &__scroll {
             height: calc(20% - 1rem);
-            @include media-min(fullPlus) {
-                height: calc(15% - 1rem);
-            }
             
             &__container {
                 display: flex;
@@ -36,6 +36,9 @@
                     height: 100%;
                     margin-top: -0.5rem;
                     color: $white-color;
+                    @include media-min(fullPlus) {
+                        width: 3rem !important;
+                    }
                     
                     &.first {
                         opacity: 0;
