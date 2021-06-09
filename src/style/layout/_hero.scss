@@ -9,29 +9,33 @@
         flex-direction: column;
 
 
-        .test {
+        &__logo {
             padding-bottom: 5%;
-            // height: calc(80vh - 1rem - 5%);
             height: calc(80% - 1rem);
             display: flex;
             justify-content: center;
+            @include media-min(fullPlus) {
+                height: calc(85% - 1rem);
+            }
         }
 
-        .scroll {
-            // height: calc(20vh - 1rem);
+        &__scroll {
             height: calc(20% - 1rem);
+            @include media-min(fullPlus) {
+                height: calc(15% - 1rem);
+            }
             
             &__container {
-                // height: 20%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
                 
                 svg {
-                    width: 2.3rem;
+                    width: 2.3rem !important;
                     height: 100%;
                     margin-top: -0.5rem;
+                    color: $white-color;
                     
                     &.first {
                         opacity: 0;
@@ -57,10 +61,7 @@
                         animation-iteration-count: infinite;
                         animation-delay: 0.9s;
                     }
-                    
-                    path {
-                        fill: $white-color;
-                    }
+
                 }
     
                 @keyframes test {

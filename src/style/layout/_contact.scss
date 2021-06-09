@@ -30,21 +30,15 @@
                 justify-content: center;
 
                 a {
-                    transition: all 0.3s ease-in-out;
                     padding: 1rem;
                     
                     svg {
                         width: 5rem !important;
                         height: 100%;
-                        
-                        path {
-                            transition: all 0.3s ease-in-out;
-                        }
-                    }
-                    
-                    &:hover {
-                        path {
-                            fill: #8369c4;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            color: #8369c4;
                         }
                     }
                 }
