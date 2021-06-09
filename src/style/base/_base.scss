@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+}
+
+main {
+    color: $white-color;
+    background-color: $black-color;
+}
+
+img {
+    max-width: 100%;
+}

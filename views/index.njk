@@ -1,9 +1,183 @@
 ---
 layout: base
 title: Home
-eleventyNavigation:
-    key: Home
-    order: 1
 ---
 
-test
+<section class="linking padding about max-width" id="about">
+    <h2 class="h2-title">
+        About me
+    </h2>
+
+    <div class="about__container">
+        <div class="about__container__text">
+            <p class="salutation"><span class="ab">Hi</span> there,</p>
+            
+            <p class="name">I'm <span class="ab">Jan Deschacht!</span></p>
+            
+            <p class="synopsis">A <span class="ab">front end developer</span> from Ostend with a sense of design and responsiveness. For the moment I'm studying programming at Arteveldehogeschool.</p>
+        </div>
+
+        <div class="about__container__img">
+            <img src="{{ '/assets/images/about.png' | url }}" alt="Image of a cartoon" loading="lazy">
+        </div>
+    </div>
+</section>
+
+<section class="linking padding skills max-width" id="skills">
+    <h2 class="h2-title">
+        Skills
+    </h2>
+
+    <div class="skills__container">
+        <ul class="skills__container__list">
+            <li class="flip-card skills__container__list__item">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <i class="fab fa-html5"></i>
+                    </div>
+
+                    <div class="flip-card-back">
+                        HTML
+                    </div>
+                </div>
+            </li>
+
+            <li class="flip-card skills__container__list__item">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+
+                    <div class="flip-card-back">
+                        CSS
+                    </div>
+                </div>
+            </li>
+
+            <li class="flip-card skills__container__list__item">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <i class="fab fa-js"></i>
+                    </div>
+
+                    <div class="flip-card-back">
+                        JAVASCRIPT
+                    </div>
+                </div>
+            </li>
+
+            <li class="flip-card skills__container__list__item">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <i class="fab fa-node"></i>
+                    </div>
+
+                    <div class="flip-card-back">
+                        NODEJS
+                    </div>
+                </div>
+            </li>
+
+            <li class="flip-card skills__container__list__item">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <i class="fab fa-sass"></i>
+                    </div>
+
+                    <div class="flip-card-back">
+                        SASS
+                    </div>
+                </div>
+            </li>
+
+            <li class="flip-card skills__container__list__item">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <i class="fab fa-react"></i>
+                    </div>
+
+                    <div class="flip-card-back">
+                        REACT
+                    </div>
+                </div>
+            </li>
+
+            <li class="flip-card skills__container__list__item">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <i class="fab fa-npm"></i>
+                    </div>
+
+                    <div class="flip-card-back">
+                        NPM
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="skills__container__img">
+            <img src="{{ '/assets/images/skills.png' | url }}" alt="Image of a cartoon" loading="lazy">
+        </div>
+    </div>
+</section>
+
+<section class="linking projects max-width padding" id="projects">
+    <h2 class="h2-title">
+        Projects
+    </h2>
+
+    <div class="projects__wrapper">
+        <ul class="projects__wrapper__list">
+            {% for project in projects %}
+                <li class="projects__wrapper__list__item">
+                    <a class="flex" href="{{ project.link }}" target="_blank">
+                        <div class="flex__item flex__img">
+                            <img src="{{ '/assets/images/' | url }}{{ project.img }}" alt="Image of project" loading="lazy">
+                        </div>
+
+                        <div class="flex__item flex__text">
+                            <p class="title">{{ project.title }}</p>
+                            <p class="description">{{ project.description }}</p>
+                        </div>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <div class="projects__wrapper__img">
+            <img src="{{ '/assets/images/projects.png' | url }}" alt="Image of a cartoon" loading="lazy">
+        </div>
+    </div>
+</section>
+
+<section class="linking padding contact max-width" id="contact">
+    <h2 class="h2-title">
+        Contact me
+    </h2>
+
+    <div class="contact__container">
+        <ul class="contact__container__list">
+            <li class="contact__container__list__item">
+                <a href="mailto:jandeschacht33@gmail.com">
+                    <i class="fas fa-at"></i>
+                </a>
+            </li>
+
+            <li class="contact__container__list__item">
+                <a href="https://github.com/pgm-jandeschacht" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+
+            <li class="contact__container__list__item">
+                <a href="https://www.linkedin.com/in/jan-deschacht-81a888178/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="contact__container__img">
+            <img src="{{ '/assets/images/contact.png' | url }}" alt="Image of a cartoon" loading="lazy">
+        </div>
+    </div>
+</section>
