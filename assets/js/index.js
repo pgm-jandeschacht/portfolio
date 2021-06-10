@@ -25,8 +25,9 @@
       });
       
       if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
-        window.location.replace('http://localhost:8080/portfolio/');
+        window.location.replace(location.href.split('#')[0]);
       };
+
       
       this.$burger.addEventListener('click', ev => {
         this.$burger.classList.toggle('is-active');
