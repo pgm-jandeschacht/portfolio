@@ -10,5 +10,11 @@
         "img": "planet_b.svg",
         "description": "Project for Web Design",
         "link": "https://github.com/pgm-jandeschacht/No_Planet_B"
+    },
+    {
+        "title": "Personal website",
+        "img": "logo.png",
+        "description": "Project for IT Business",
+        "link": "https://github.com/pgm-jandeschacht/portfolio"
     }
 ]

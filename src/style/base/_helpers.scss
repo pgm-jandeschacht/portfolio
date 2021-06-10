@@ -51,3 +51,22 @@
         border-color: #1125bc;
     }
 }
+
+.nav-link:hover,
+.nav-link-mobile:hover {
+    & .pr {
+        color: #d34e7f;
+    }
+
+    & .co {
+        color: #8369c4;
+    }
+
+    & .ab {
+        color: #ce643a;
+    }
+
+    & .sk {
+        color: #1125bc;
+    }
+}
