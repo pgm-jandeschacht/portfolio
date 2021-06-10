@@ -22,6 +22,7 @@
     registersListeners() {
       window.addEventListener('scroll', ev => {
         this.changeLinkState();
+        console.log(window.location.href.split('#')[0])
       });
       
       if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
