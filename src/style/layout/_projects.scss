@@ -37,9 +37,10 @@
                     }
 
                     &__img {
-                        margin-right: 1rem;
+                        margin-right: 2rem;
                         width: 10rem;
                         @include media-min(md) {
+                            margin-right: 1rem;
                             padding: 2rem;
                         }
 
@@ -55,14 +56,14 @@
                             font-weight: 500;
                             margin-bottom: 0.5rem;
                             font-size: 1.5rem;
-                            @include media-min(md) {
+                            @include media-min(xs) {
                                 font-size: 2rem;
                             }
                         }
                         
                         .description {
                             font-size: 1rem;
-                            @include media-min(sm) {
+                            @include media-min(xs) {
                                 font-size: 1.2rem;
                             }
                         }
@@ -86,7 +87,6 @@
             width: 100%;
             margin-top: 2rem;
             @include media-min(md) {
-                height: 23rem;
                 margin-left: 4rem;
                 width: 50%;
             }
