@@ -2,19 +2,49 @@
     {
         "title": "Spotify API",
         "img": "spotify.png",
-        "description": "Project for Programming 3",
-        "link": "https://github.com/pgm-jandeschacht/todo-api-flow-exercise"
+        "description": "An API like Spotify",
+        "link": "https://github.com/pgm-jandeschacht/Spotify_API"
     },
     {
-        "title": "No Planet B",
-        "img": "planet_b.svg",
-        "description": "Project for Web Design",
-        "link": "https://github.com/pgm-jandeschacht/No_Planet_B"
+        "title": "Movie Application",
+        "img": "movie.png",
+        "description": "An app created in React",
+        "link": "https://github.com/pgm-jandeschacht/Movie_Application"
     },
     {
-        "title": "Personal website",
+        "title": "Developer Quiz",
         "img": "logo.png",
-        "description": "Project for IT Business",
-        "link": "https://github.com/pgm-jandeschacht/portfolio"
+        "description": "A quiz for developers",
+        "link": "https://github.com/pgm-jandeschacht/Developer_Quiz"
+    },
+    {
+        "title": "Hike App",
+        "img": "hike.png",
+        "description": "A product site for a Walk-A-Wish",
+        "link": "https://github.com/pgm-jandeschacht/Hike_App"
+    },
+    {
+        "title": "Tinder Clone",
+        "img": "test.png",
+        "description": "A clone of Tinder",
+        "link": "https://github.com/pgm-jandeschacht/Tinder_Clone"
+    },
+    {
+        "title": "Webshop",
+        "img": "shop.png",
+        "description": "A webshop with database",
+        "link": "https://github.com/pgm-jandeschacht/Webshop"
+    },
+    {
+        "title": "Gentse Feesten",
+        "img": "gent.svg",
+        "description": "A clone site of Gentse Feesten",
+        "link": "https://github.com/pgm-jandeschacht/Gentse_Feesten"
+    },
+    {
+        "title": "Arne Quinze",
+        "img": "logo.png",
+        "description": "A clone site of Arne Quinze",
+        "link": "https://github.com/pgm-jandeschacht/Arne_Quinze"
     }
 ]
